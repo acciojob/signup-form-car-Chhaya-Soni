@@ -8,6 +8,45 @@
 
 <body>
 	<!-- the entire body must be written by student -->
+	 <div class="container">
+        <h1>Signup Form</h1>
+        <form id="signupForm" action="#" method="post">
+            <label for="name">Name <span style="color: red;">*</span></label>
+            <input type="text" id="name" name="name" placeholder="Name" required>
+            
+            <label for="email">Email <span style="color: red;">*</span></label>
+            <input type="email" id="email" name="email" placeholder="Email" required>
+            
+            <label>Gender <span style="color: red;">*</span></label>
+            <label class="radio" for="gender_m"><input type="radio" id="gender_m" name="gender" value="Male" required> Male</label>
+            <label class="radio" for="gender_f"><input type="radio" id="gender_f" name="gender" value="Female" required> Female</label>
+            
+            <label for="cars">Car Brands <span style="color: red;">*</span></label>
+            <select id="cars" name="cars" required>
+                <option value="" disabled selected>--Please choose an option--</option>
+                <option value="toyota">Toyota</option>
+                <option value="honda">Honda</option>
+                <option value="ford">Ford</option>
+                <option value="chevrolet">Chevrolet</option>
+            </select>
+            
+            <label for="age">Age <span style="color: red;">*</span></label>
+            <input type="number" id="age" name="age" placeholder="Age" required>
+            
+            <label for="dob">Date of Birth <span style="color: red;">*</span></label>
+            <input type="date" id="dob" name="dob" required>
+            
+            <label for="tel">Phone Number</label>
+            <input type="tel" id="tel" name="tel" placeholder="xxx-xxx-xxxx">
+            
+            <label for="password">Password <span style="color: red;">*</span></label>
+            <input type="password" id="password" name="password" placeholder="Password" required>
+            
+            <label><input type="checkbox" id="tos" name="tos" required> I agree to the TOS</label>
+            
+            <button type="submit">Sign Up</button>
+        </form>
+    </div>
     <script type="text/javascript" src="./script.js">
 </script>
 
